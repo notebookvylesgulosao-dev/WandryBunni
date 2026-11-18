@@ -1,0 +1,205 @@
+[
+  {
+    "source": "wands/celestial_wand.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/celestial_wand_0_bone_rod.png",
+      "src/main/resources/assets/magia/textures/source/celestial_wand_1_magma_rod.png",
+      "src/main/resources/assets/magia/textures/source/celestial_wand_2_celestial_rod.png"
+    ],
+    "elements": 30,
+    "groups": 5,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "wands/widow-rod.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/widow-rod_0_widow_rod.png"
+    ],
+    "elements": 4,
+    "groups": 3,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "wands/magma_wand.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/magma_wand_0_bone_rod.png",
+      "src/main/resources/assets/magia/textures/source/magma_wand_1_magma_rod.png"
+    ],
+    "elements": 37,
+    "groups": 4,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "wands/bone-wand.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/bone-wand_0_bone_rod.png"
+    ],
+    "elements": 46,
+    "groups": 5,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "wands/emerald_wand_refined.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/emerald_wand_refined_0_emerald_wand_refined_256.png"
+    ],
+    "elements": 15,
+    "groups": 3,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "wands/amethyst-rod.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/amethyst-rod_0_amethyst_rod.png"
+    ],
+    "elements": 14,
+    "groups": 5,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "spell_projectiles/sectumsempra_projectile.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/sectumsempra_projectile_0_sectumsempra_texture.png"
+    ],
+    "elements": 11,
+    "groups": 1,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "spell_projectiles/imperius_projectile.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/imperius_projectile_0_imperius_256.png"
+    ],
+    "elements": 11,
+    "groups": 1,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "spell_projectiles/crucio_projectile.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/crucio_projectile_0_crucio_projectile_256.png"
+    ],
+    "elements": 8,
+    "groups": 1,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "spell_projectiles/petrificus_totalis_projectile.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/petrificus_totalis_projectile_0_corinficus_white_vortex_256.png"
+    ],
+    "elements": 13,
+    "groups": 1,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "spell_projectiles/corinficus_projectile.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/corinficus_projectile_0_corinficus_256.png"
+    ],
+    "elements": 11,
+    "groups": 1,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "spell_projectiles/expeliarmos_projectile.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/expeliarmos_projectile_0_wingardium_leviosa_256.png"
+    ],
+    "elements": 11,
+    "groups": 1,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "spell_projectiles/avada_kedavra_projectile.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/avada_kedavra_projectile_0_avada_kedavra_256.png"
+    ],
+    "elements": 12,
+    "groups": 1,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "prop ataque base/bone_prop.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/bone_prop_0_bone_rod.png"
+    ],
+    "elements": 9,
+    "groups": 2,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "prop ataque base/amethyst-prop.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/amethyst-prop_0_amethyst_rod.png"
+    ],
+    "elements": 12,
+    "groups": 2,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "prop ataque base/dragon-prop.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/dragon-prop_0_dragon_rod.png"
+    ],
+    "elements": 11,
+    "groups": 2,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "prop ataque base/widow-prop.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/widow-prop_0_widow_rod.png"
+    ],
+    "elements": 9,
+    "groups": 2,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "prop ataque base/celestial_prop.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/celestial_prop_0_celestial_rod.png"
+    ],
+    "elements": 12,
+    "groups": 2,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "items/witch-broom.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/witch-broom_0_witch_broom.png"
+    ],
+    "elements": 23,
+    "groups": 2,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  },
+  {
+    "source": "items/witch-hat.bbmodel",
+    "textures_extracted": [
+      "src/main/resources/assets/magia/textures/source/witch-hat_0_witch_hat.png"
+    ],
+    "elements": 7,
+    "groups": 1,
+    "animations": 0,
+    "note": "Original .bbmodel copied unchanged; texture bytes extracted from embedded source."
+  }
+]
