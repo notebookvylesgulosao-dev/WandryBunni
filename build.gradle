@@ -50,3 +50,7 @@ jar {
         rename { "${it}_${project.archives_base_name}" }
     }
 }
+
+tasks.withType(Test).configureEach {
+    failOnNoDiscoveredTests = false
+}
