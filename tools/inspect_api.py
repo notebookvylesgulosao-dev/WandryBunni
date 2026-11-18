@@ -25,8 +25,23 @@ for line in open("tools/inspect_request.txt"):
             if os.path.basename(f) == arg + ".java":
                 print("--", f.replace(out, ""))
                 for l in open(f, errors="ignore"):
-                    if sig.match(l) and "return " not in l and not l.strip().startswith(("if", "for", "//", "*")):
+                    if sig.match(l) and "return " not in l and "private " not in l and not l.strip().startswith(("if", "for", "//", "*", "new ", "throw", ".", "builder", "super")) and l.startswith(("\tpublic", "\tprotected", "\tstatic", "\tabstract", "\tdefault", "\t\tpublic static", "\t\tpublic ")):
                         print(l.rstrip()[:200])
+    elif kind == "javap":
+        cls = arg.replace(".", "/") + ".class"
+        found = None
+        for base in (os.path.expanduser("~"), os.getcwd()):
+            for dp, dn, fn in os.walk(base):
+                for f in fn:
+                    if f.endswith(".jar") and "sources" not in f:
+                        jp = os.path.join(dp, f)
+                        try:
+                            if cls in zipfile.ZipFile(jp).namelist(): found = jp; break
+                        except Exception: pass
+                if found: break
+            if found: break
+        print("jar:", found)
+        if found: print(subprocess.run(["javap", "-public", "-cp", found, arg], capture_output=True, text=True).stdout[:6000])
     elif kind == "grep":
         n = 0
         for f in files:
