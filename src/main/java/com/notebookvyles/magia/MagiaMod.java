@@ -1,6 +1,7 @@
 package com.notebookvyles.magia;
 
 import com.notebookvyles.magia.spells.SpellCatalog;
+import com.notebookvyles.magia.items.ModItems;
 import com.notebookvyles.magia.items.WandCatalog;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -16,6 +17,7 @@ public final class MagiaMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ModItems.init();
         LOGGER.info("Magia Arcana iniciando: {} feitiços e {} varinhas catalogados.",
                 SpellCatalog.ALL.size(), WandCatalog.ALL.size());
         LOGGER.warn("Build-base: os catálogos estão definidos, mas os sistemas de jogo ainda não estão conectados.");
