@@ -2,9 +2,13 @@
 """Lê tools/inspect_request.txt e imprime assinaturas do código-fonte decompilado do Minecraft.
 Linhas: 'class Nome' (assinaturas de métodos/campos), 'grep REGEX' (busca em todos os fontes)."""
 import glob, os, re, subprocess, sys, zipfile
-jars = [j for j in glob.glob(os.path.expanduser("~/.gradle/caches/**/*sources.jar"), recursive=True)
-        if "minecraft" in j.lower() and "fabric-api" not in j.lower()]
-jars += glob.glob("**/*minecraft*-sources.jar", recursive=True)
+jars = []
+for base in (os.path.expanduser("~"), os.getcwd()):
+    for dp, dn, fn in os.walk(base):
+        for f in fn:
+            if f.endswith("sources.jar") and "minecraft" in (dp + f).lower() and "fabric-api" not in (dp + f).lower() and "/magia" not in f.lower():
+                jars.append(os.path.join(dp, f))
+jars = sorted(set(jars))
 print("JARS:", jars)
 out = "/tmp/mcsrc"; os.makedirs(out, exist_ok=True)
 for j in jars: zipfile.ZipFile(j).extractall(out)

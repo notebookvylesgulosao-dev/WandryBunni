@@ -5,4 +5,4 @@ class ProjectileEntity
 class FlyingItemEntityRenderer
 class KeyBinding
 class PlayerInput
-grep class Category
+grep record Category
