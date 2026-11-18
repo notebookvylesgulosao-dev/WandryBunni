@@ -1,4 +1,6 @@
 name: Build mod
+permissions:
+  contents: write
 on:
   workflow_dispatch:
   push:
@@ -27,3 +29,12 @@ jobs:
           path: |
             build/libs/*.jar
             build-log.txt
+      - name: Conteúdo do jar
+        run: unzip -l build/libs/magia-arcana-*.jar | grep -E "items/|models/item|textures/item|ModItems|lang/|fabric.mod"
+      - name: Publicar em Releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          JAR=$(ls build/libs/magia-arcana-*.jar | grep -v sources | head -1)
+          gh release delete latest --yes --cleanup-tag || true
+          gh release create latest "$JAR" --title "Build mais recente" --notes "Build automático do commit ${GITHUB_SHA::7}" --target "$GITHUB_SHA"
