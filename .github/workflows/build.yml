@@ -30,7 +30,9 @@ jobs:
             build/libs/*.jar
             build-log.txt
       - name: Conteúdo do jar
-        run: unzip -l build/libs/magia-arcana-*.jar | grep -E "items/|models/item|textures/item|ModItems|lang/|fabric.mod"
+        run: |
+          JAR=$(ls build/libs/magia-arcana-*.jar | grep -v sources | head -1)
+          unzip -l "$JAR" | grep -E "items/|models/item|textures/item|ModItems|lang/|fabric.mod"
       - name: Publicar em Releases
         env:
           GH_TOKEN: ${{ github.token }}
