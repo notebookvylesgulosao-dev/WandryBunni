@@ -1,38 +1,20 @@
-class LivingEntity
-class Entity
-class EntityType
-class ServerWorld
-class DustParticleEffect
-class ItemStackParticleEffect
-class EntityAttributes
-class EntityAttributeInstance
-class StatusEffectInstance
-class DamageSources
-class Screen
-class DrawContext
-class CustomPayload
-class ServerPlayerEntity
-class PlayerEntity
-class LootTable
-class LootPool
-class RandomChanceLootCondition
-class ItemEntry
-class ItemCooldownManager
-class WorldSavePath
-class Click
-class KeyInput
-class FlyingItemEntityRenderState
-class EquippableComponent
-javap net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry
-javap net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper
-javap net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking
-javap net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking
-javap net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry
-javap net.fabricmc.fabric.api.loot.v3.LootTableEvents
-javap net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback
-javap net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents
-javap net.fabricmc.fabric.api.event.lifecycle.v1.ClientTickEvents
-javap net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder
-javap net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents
-grep shouldDismount
+grep \.stopRiding\(\)
+grep class FlyingItemEntityRenderer
+grep record PlayerInput
+grep record Click
+grep record KeyInput
+grep class EntityRendererFactory
+grep class MouseInput
+javap net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents
+javap net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking$Context
+javap net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking$Context
+javap net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking$PlayPayloadHandler
+javap net.minecraft.util.PlayerInput
+javap net.minecraft.client.gui.Click
+javap net.minecraft.client.input.KeyInput
+javap net.minecraft.network.packet.CustomPayload$Id
+javap net.minecraft.network.codec.PacketCodec
+javap net.minecraft.network.codec.PacketCodecs
 grep boolean isSneaking
+grep isSneaking\(\).*Vehicle|hasVehicle.*isSneaking
+class MobEntity
