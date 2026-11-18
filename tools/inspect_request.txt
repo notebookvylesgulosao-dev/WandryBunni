@@ -1,20 +1,14 @@
-grep \.stopRiding\(\)
-grep class FlyingItemEntityRenderer
-grep record PlayerInput
-grep record Click
-grep record KeyInput
-grep class EntityRendererFactory
-grep class MouseInput
-javap net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents
-javap net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking$Context
-javap net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking$Context
-javap net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking$PlayPayloadHandler
-javap net.minecraft.util.PlayerInput
-javap net.minecraft.client.gui.Click
-javap net.minecraft.client.input.KeyInput
-javap net.minecraft.network.packet.CustomPayload$Id
-javap net.minecraft.network.codec.PacketCodec
-javap net.minecraft.network.codec.PacketCodecs
-grep boolean isSneaking
-grep isSneaking\(\).*Vehicle|hasVehicle.*isSneaking
-class MobEntity
+show PlayerEntity 440 470
+show ServerPlayerEntity 1722 1740
+show FlyingItemEntityRenderer 1 80
+show FlyingItemEntityRenderState 1 30
+show Entity 3400 3412
+grep 22\.5
+grep class ModelElementRotation|record ModelElementRotation|class ElementRotation
+grep boolean handleAttack
+grep public abstract boolean damage
+grep updateForNonLivingEntity
+grep class EntityRenderState
+show EntityRenderer 1 110
+grep class OrderedRenderCommandQueue|interface OrderedRenderCommandQueue
+grep void submitItem

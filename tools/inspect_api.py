@@ -27,6 +27,13 @@ for line in open("tools/inspect_request.txt"):
                 for l in open(f, errors="ignore"):
                     if sig.match(l) and "return " not in l and "private " not in l and not l.strip().startswith(("if", "for", "//", "*", "new ", "throw", ".", "builder", "super")) and l.startswith(("\tpublic", "\tprotected", "\tstatic", "\tabstract", "\tdefault", "\t\tpublic static", "\t\tpublic ")):
                         print(l.rstrip()[:200])
+    elif kind == "show":
+        name, a, b = arg.split()
+        for f in files:
+            if os.path.basename(f) == name + ".java":
+                ls = open(f, errors="ignore").read().splitlines()
+                print("--", f.replace(out, ""))
+                for i in range(int(a) - 1, min(int(b), len(ls))): print(f"{i+1}: {ls[i]}"[:200])
     elif kind == "javap":
         cls = arg.replace(".", "/") + ".class"
         found = None
