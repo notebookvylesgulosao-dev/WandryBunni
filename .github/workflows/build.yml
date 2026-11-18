@@ -15,7 +15,10 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: current
+      - name: Resolver versões do Fabric
+        run: python3 .github/scripts_resolve.py
       - name: Build
+        shell: bash
         run: gradle build --stacktrace 2>&1 | tee build-log.txt
       - uses: actions/upload-artifact@v4
         if: always()
