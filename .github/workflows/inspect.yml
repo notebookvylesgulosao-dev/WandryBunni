@@ -1,0 +1,19 @@
+name: Inspect API
+on:
+  workflow_dispatch:
+  push:
+    paths: ["tools/inspect_request.txt"]
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: 21}
+      - uses: gradle/actions/setup-gradle@v4
+        with: {gradle-version: current}
+      - run: python3 .github/scripts_resolve.py
+      - name: genSources
+        run: gradle genSources --stacktrace 2>&1 | tail -15
+      - name: Assinaturas
+        run: python3 tools/inspect_api.py
